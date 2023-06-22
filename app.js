@@ -8,3 +8,41 @@ const BMIData = [
 ];
 
 // IMC = poids en kg / taille² en m
+
+
+
+/******** récupérer les valeurs des inputs ****/
+
+let btnCalculateIMC = document.querySelector("button")
+
+btnCalculateIMC.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  const inputRegex = new RegExp(/^\d+$/)
+
+  let height = document.querySelector("#height").value
+  let weight = document.querySelector("#weight").value
+  console.log(height);
+  console.log(weight);
+
+  if (inputRegex.test(height) && (inputRegex.test(weight))) {
+      console.log("InputRegex ok")
+      //meth Math.sqrt() : renvoyer racine carrée d'un nombre
+      let IMC = height * Math.sqrt(weight)
+      console.log(IMC)    
+  } else {
+        console.log(("InputRegex non ok"))
+        alert("Veuillez renseigner votre taille en cm et votre poids en kg");
+  }
+
+
+  
+  /*if (!height || !weight) {
+    alert("Veuillez renseigner votre taille et votre poids");
+  } else {
+    //meth Math.sqrt() : renvoyer racine carrée d'un nombre
+    let IMC = height * Math.sqrt(weight)
+    console.log(IMC)
+  }*/
+})
+
