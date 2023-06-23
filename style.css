@@ -114,9 +114,6 @@ form button:hover{
     margin-top: 30px;
     padding-left: 0;
   }
-}
-
-@media (max-width: 500px){
   .input-group {
     width: 100%;
   }
@@ -125,3 +122,4 @@ form button:hover{
     min-width: auto;
   }
 }
+

@@ -16,6 +16,7 @@
   <body>
     <div class="container">
       <h1>Calcul <span>d'IMC</span></h1>
+      
       <form>
         <div class="inputs-container">
           <div class="input-group">
@@ -24,25 +25,29 @@
             type="number"
             placeholder="Votre taille en cm"
             id="height"
-            class="height-input">
+            class="height-input"
+            />
           </div>
+
           <div class="input-group">
             <label for="weight">Votre poids en kilogrammes: Ex. 75 pour 75kg</label>
             <input 
             type="number"
             placeholder="Votre poids en kg"
             id="weight"
-            class="weight-input">
+            class="weight-input"
+            />
           </div>
         </div>
+
         <button>Calculer votre IMC</button>
       </form>
+
       <div class="info">
         <p class="bmi-value">0</p>
         <p class="result">En attente du résultat...</p>
       </div>
     </div>
-
     
     <script src="app.js"></script>
   </body>
